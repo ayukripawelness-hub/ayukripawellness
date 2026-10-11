@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#14532d">
+<title>Ayukripa Wellness Care | Healthy Life, Happy Life</title>
+<style>
+:root{--green:#14532d;--green2:#237a3d;--lime:#b5d94a;--gold:#f4bd35;--cream:#fffdf4;--ink:#173323;--muted:#617168;--pink:#bd4386}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fbfdf7;line-height:1.55}a{color:inherit;text-decoration:none}.container{width:min(1140px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid #e3ecd9}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--green);font-size:1.08rem}.brand img{width:55px;height:55px;object-fit:cover;border-radius:50%;border:2px solid var(--gold)}.brand small{display:block;font-size:.72rem;font-weight:600;letter-spacing:.04em;color:#67816b}.navlinks{display:flex;gap:24px;align-items:center;font-size:.93rem;font-weight:700}.navlinks a:hover{color:var(--green2)}.btn{border:0;border-radius:999px;padding:12px 21px;background:var(--green);color:#fff;font-weight:800;cursor:pointer;display:inline-flex;justify-content:center;align-items:center;gap:8px;transition:.2s}.btn:hover{background:#0c3d20;transform:translateY(-1px)}.btn.alt{background:var(--gold);color:#2e351b}.btn.outline{background:transparent;color:var(--green);border:1px solid #b5cdb5}.menu{display:none;background:none;border:0;font-size:1.6rem;color:var(--green)}
+.hero{padding:60px 0 50px;background:radial-gradient(circle at 80% 10%,#e8f6d6 0,transparent 35%),linear-gradient(130deg,#fffdf2,#f0f8e9)}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:45px;align-items:center}.eyebrow{display:inline-block;padding:7px 13px;border-radius:999px;background:#e4f2d4;color:var(--green);font-size:.82rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.hero h1{font-size:clamp(2.5rem,5vw,4.6rem);line-height:1.04;margin:18px 0;color:#124728;letter-spacing:-.045em}.hero h1 span{color:#e68a26}.hero p{font-size:1.1rem;color:#526b59;max-width:570px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}.trust{display:flex;gap:18px;flex-wrap:wrap;font-size:.86rem;font-weight:700;color:#4b6b51}.hero-image{position:relative}.hero-image img{width:100%;height:510px;object-fit:cover;object-position:center;border-radius:28px;box-shadow:0 22px 55px #1d4d2925}.image-note{position:absolute;bottom:18px;left:18px;background:#fffef0eF;padding:12px 16px;border-radius:14px;font-weight:800;color:var(--green);box-shadow:0 8px 20px #0001}
+section{padding:68px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 32px}.section-head .eyebrow{margin-bottom:10px}.section-head h2{font-size:clamp(1.8rem,3.4vw,2.7rem);line-height:1.12;margin:8px 0 12px;color:var(--green)}.section-head p{color:var(--muted);margin:0}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.product{background:#fff;border:1px solid #e7eedf;border-radius:20px;overflow:hidden;box-shadow:0 8px 25px #163f1b08}.product img{width:100%;height:280px;object-fit:cover;background:#f2f4ed}.product-body{padding:20px}.product h3{margin:0 0 6px;color:var(--green);font-size:1.2rem}.product p{color:var(--muted);font-size:.94rem;margin:0 0 14px}.product .tag{font-size:.75rem;font-weight:800;color:#6a812d;background:#f1f7df;border-radius:99px;padding:5px 9px;display:inline-block;margin-bottom:9px}
+.benefits{background:#edf6e5}.benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.benefit{padding:22px;background:#fff;border-radius:18px;border:1px solid #e2ecd7}.benefit .emoji{font-size:1.7rem}.benefit h3{font-size:1.05rem;margin:10px 0 5px;color:var(--green)}.benefit p{margin:0;color:var(--muted);font-size:.9rem}
+.network{background:linear-gradient(130deg,#124728,#24723d);color:white}.network .section-head h2,.network .section-head p{color:white}.network-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.network-card{background:#ffffff12;border:1px solid #ffffff35;border-radius:20px;padding:26px}.network-card h3{margin-top:0;font-size:1.35rem}.network-card p{color:#e1efdf}.tree{display:flex;justify-content:center;gap:14px;margin:20px 0}.tree div{background:#fff;color:var(--green);padding:12px 22px;border-radius:12px;text-align:center;font-weight:800;min-width:115px}.tree small{display:block;color:#6b806d;font-weight:600}
+.forms-section{background:#fffdf6}.forms-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}.form-card{background:white;border:1px solid #e1ead9;box-shadow:0 12px 35px #143f1a0b;border-radius:22px;padding:28px}.form-card h3{margin:0;color:var(--green);font-size:1.45rem}.form-card>p{color:var(--muted);margin-top:5px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:6px;margin-bottom:13px}.field.full{grid-column:1/-1}.field label{font-size:.84rem;font-weight:800;color:#37533c}.field input,.field select,.field textarea{width:100%;border:1px solid #d6e2d0;background:#fcfef9;border-radius:10px;padding:12px 13px;font:inherit;color:var(--ink);outline:none}.field input:focus,.field select:focus{border-color:#489451;box-shadow:0 0 0 3px #4894511b}.field small{font-size:.76rem;color:var(--muted)}.check{display:flex;gap:8px;align-items:flex-start;font-size:.83rem;color:var(--muted);margin:5px 0 16px}.check input{margin-top:4px}.message{display:none;margin-top:15px;padding:13px;border-radius:10px;background:#edf8e9;color:#1a642d;font-weight:700;overflow-wrap:anywhere}.message.error{background:#fff0ef;color:#a32727}.id-card{display:none;margin-top:18px;border:2px dashed #d3a72d;background:#fff9df;padding:18px;border-radius:15px}.id-card h4{margin:0 0 10px;color:#765312}.id-value{font-size:1.35rem;font-weight:900;letter-spacing:.04em;color:var(--green);overflow-wrap:anywhere}.id-meta{font-size:.9rem;color:#5d684d;margin:6px 0 12px}.dashboard{display:none;background:#f3f8ed;border-radius:14px;padding:16px;margin-top:15px}.dashboard h4{margin:0 0 8px;color:var(--green)}.dashboard p{margin:5px 0;color:#506450}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.faq{background:white;border:1px solid #e5ecde;padding:20px;border-radius:15px}.faq h3{margin:0 0 7px;color:var(--green);font-size:1rem}.faq p{margin:0;color:var(--muted);font-size:.92rem}
+footer{background:#0c321c;color:#d9eadb;padding:35px 0}.footer-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}.footer-brand{font-size:1.25rem;font-weight:900;color:white}.footer-note{font-size:.82rem;max-width:640px;color:#bcd4bf}.toast{position:fixed;right:20px;bottom:20px;z-index:50;display:none;background:#133f25;color:white;padding:14px 18px;border-radius:12px;box-shadow:0 10px 35px #0003}
+@media(max-width:850px){.navlinks{display:none;position:absolute;top:78px;left:0;right:0;background:white;padding:18px 4%;border-bottom:1px solid #e5eddf;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.hero-grid{grid-template-columns:1fr}.hero{padding-top:38px}.hero-image img{height:430px}.products{grid-template-columns:repeat(2,1fr)}.benefit-grid{grid-template-columns:repeat(2,1fr)}.network-grid,.forms-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.brand{font-size:.9rem}.brand img{width:45px;height:45px}.hero h1{font-size:2.65rem}.hero-image img{height:350px}.products{grid-template-columns:1fr}.product img{height:320px}.benefit-grid{grid-template-columns:1fr 1fr;gap:10px}.benefit{padding:15px}.form-card{padding:20px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.faq-grid{grid-template-columns:1fr}.tree div{min-width:0;flex:1;padding:10px 8px}.section-head{text-align:left}.section-head.center{text-align:center}}
+</style>
+</head>
+<body>
+<header>
+ <div class="container nav">
+  <a class="brand" href="#home"><img src="assets/ayukripa-logo.jpeg" alt="Ayukripa Wellness Care logo"><span>AYUKRIPA WELLNESS CARE<small>Healthy Life | Happy Life</small></span></a>
+  <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+  <nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#products">Products</a><a href="#network">Network Marketing</a><a href="#register">Register</a><a href="#login" class="btn">Member Login</a></nav>
+ </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+ <div><span class="eyebrow">Wellness • Care • Community</span><h1>Healthy choices.<br><span>Happier lives.</span></h1><p>Welcome to Ayukripa Wellness Care. Discover our wellness and personal-care product range and join our growing member network.</p>
+ <div class="hero-actions"><a class="btn" href="#products">Explore Products ↗</a><a class="btn outline" href="#register">Become a Member</a></div>
+ <div class="trust"><span>🌿 Wellness-focused</span><span>🤝 Community network</span><span>💚 Member-first care</span></div></div>
+ <div class="hero-image"><img src="assets/amrit-promo.jpeg" alt="Ayukripa Amrit Sanjivani product display"><div class="image-note">Ayukripa Wellness Care</div></div>
+</div></section>
+<section id="products"><div class="container"><div class="section-head center"><span class="eyebrow">Our range</span><h2>Products for everyday care</h2><p>Explore the products shown in our catalogue. For availability, pricing and usage details, please contact an authorised representative.</p></div>
+ <div class="products">
+  <article class="product"><img src="assets/amrit-sanjivani.jpeg" alt="Amrit Sanjivani bottle"><div class="product-body"><span class="tag">WELLNESS RANGE</span><h3>Amrit Sanjivani</h3><p>Multi-berry fruit and herb formulation. Check the product label for ingredients, directions and applicable cautions.</p><a class="btn outline" href="#register">Enquire as a member</a></div></article>
+  <article class="product"><img src="assets/soft-cozi-jumbo.jpeg" alt="Soft Cozi jumbo sanitary napkin pack"><div class="product-body"><span class="tag">PERSONAL CARE</span><h3>Soft Cozi Trifold Napkins</h3><p>Jumbo pack shown in the supplied product image. Refer to the packaging for specifications and product details.</p><a class="btn outline" href="#register">Enquire as a member</a></div></article>
+  <article class="product"><img src="assets/product-combo.jpeg" alt="Ayukripa and Soft Cozi product combination"><div class="product-body"><span class="tag">PRODUCT COLLECTION</span><h3>Everyday Care Collection</h3><p>Browse the featured Ayukripa and Soft Cozi products and contact your sponsor for current stock and pricing.</p><a class="btn outline" href="#register">Join our network</a></div></article>
+ </div></div></section>
+<section class="benefits"><div class="container"><div class="section-head center"><span class="eyebrow">Why Ayukripa</span><h2>Care built around people</h2><p>Our member portal helps you keep your registration and network placement details together.</p></div><div class="benefit-grid">
+ <div class="benefit"><div class="emoji">🌱</div><h3>Wellness focus</h3><p>Product information and care in one place.</p></div>
+ <div class="benefit"><div class="emoji">👥</div><h3>Member community</h3><p>Connect through your sponsor and member network.</p></div>
+ <div class="benefit"><div class="emoji">🪪</div><h3>Customer ID</h3><p>Generate a unique demo member ID after registration.</p></div>
+ <div class="benefit"><div class="emoji">↔️</div><h3>Left & right legs</h3><p>Record a placement preference for your network.</p></div>
+ </div></div></section>
+<section class="network" id="network"><div class="container"><div class="section-head center"><span class="eyebrow">Member network</span><h2>Understand left and right placement</h2><p>During registration, you can optionally provide a sponsor ID and select a placement side.</p></div><div class="network-grid">
+ <div class="network-card"><h3>Simple network structure</h3><p>A sponsor is the member who referred you. “Left” or “Right” is a placement preference only; this website does not calculate commissions or verify a real company network.</p><div class="tree"><div>Left leg<small>Placement</small></div><div>Right leg<small>Placement</small></div></div></div>
+ <div class="network-card"><h3>Before you register</h3><p>Use a sponsor ID only if it was provided to you by your sponsor. Keep your login details private. Membership, product availability and any compensation plan should be confirmed with the company.</p><a class="btn alt" href="#register">Register now ↓</a></div>
+ </div></div></section>
+<section class="forms-section" id="register"><div class="container"><div class="section-head center"><span class="eyebrow">Member area</span><h2>Register or log in</h2><p>Register to create a customer ID, then use the same email and password to sign in on this browser.</p></div>
+ <div class="forms-grid">
+  <div class="form-card"><h3>Create your account</h3><p>Fields marked * are required.</p>
+   <form id="registerForm"><div class="form-grid">
+    <div class="field"><label for="fullName">Full name *</label><input id="fullName" name="fullName" required autocomplete="name" placeholder="Your full name"></div>
+    <div class="field"><label for="phone">Mobile number *</label><input id="phone" name="phone" required inputmode="tel" pattern="[0-9+\-\s]{10,16}" placeholder="10-digit mobile"></div>
+    <div class="field full"><label for="email">Email address *</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com"></div>
+    <div class="field"><label for="password">Create password *</label><input id="password" name="password" type="password" required minlength="8" autocomplete="new-password" placeholder="At least 8 characters"></div>
+    <div class="field"><label for="confirmPassword">Confirm password *</label><input id="confirmPassword" name="confirmPassword" type="password" required minlength="8" autocomplete="new-password" placeholder="Repeat password"></div>
+    <div class="field"><label for="sponsor">Sponsor / referral ID</label><input id="sponsor" name="sponsor" placeholder="Optional sponsor ID"></div>
+    <div class="field"><label for="placement">Placement side *</label><select id="placement" name="placement" required><option value="">Choose side</option><option value="Left">Left</option><option value="Right">Right</option></select></div>
+    <div class="field full"><label for="address">City / address (optional)</label><input id="address" name="address" autocomplete="street-address" placeholder="City or address"></div>
+   </div><label class="check"><input type="checkbox" id="consent" required><span>I confirm that the details provided are accurate and understand this demo stores data only in this browser.</span></label>
+   <button class="btn" type="submit">Register & Generate Customer ID</button><div class="message" id="registerMessage" role="status"></div>
+   <div class="id-card" id="newIdCard"><h4>Registration complete — demo customer ID</h4><div class="id-value" id="newCustomerId"></div><div class="id-meta" id="newIdMeta"></div><button type="button" class="btn outline" id="copyIdBtn">Copy customer ID</button></div>
+   </form>
+  </div>
+  <div class="form-card" id="login"><h3>Member login</h3><p>Sign in with the email and password used during registration.</p>
+   <form id="loginForm"><div class="field"><label for="loginEmail">Email address *</label><input id="loginEmail" type="email" required autocomplete="username" placeholder="you@example.com"></div><div class="field"><label for="loginPassword">Password *</label><input id="loginPassword" type="password" required autocomplete="current-password" placeholder="Your password"></div><button class="btn" type="submit">Log in</button><div class="message" id="loginMessage" role="status"></div></form>
+   <div class="dashboard" id="dashboard"><h4>Member details</h4><p><strong>Name:</strong> <span id="dashName"></span></p><p><strong>Customer ID:</strong> <span id="dashId"></span></p><p><strong>Sponsor ID:</strong> <span id="dashSponsor"></span></p><p><strong>Placement:</strong> <span id="dashPlacement"></span></p><p><strong>Mobile:</strong> <span id="dashPhone"></span></p><button class="btn outline" id="logoutBtn" type="button">Log out</button></div>
+   <div style="margin-top:22px;padding-top:18px;border-top:1px solid #e6eee0"><h3 style="font-size:1.05rem">Already a member?</h3><p style="font-size:.9rem">If you have not registered on this browser yet, register first. This demo cannot recover accounts from another device.</p></div>
+  </div>
+ </div></div></section>
+<section><div class="container"><div class="section-head center"><span class="eyebrow">Helpful notes</span><h2>Frequently asked questions</h2></div><div class="faq-grid"><div class="faq"><h3>Is the customer ID official?</h3><p>No. The ID generated here is a browser-based demo ID. Connect a secure backend and company-approved ID service before real member onboarding.</p></div><div class="faq"><h3>Where is my data stored?</h3><p>In this sample, registration records are saved in the current browser's local storage. Clearing browser data may remove them.</p></div><div class="faq"><h3>Is this ready for production?</h3><p>No. A live website needs server-side authentication, password hashing, secure database storage, HTTPS and privacy/consent policies.</p></div><div class="faq"><h3>Can I use this on a phone?</h3><p>Yes. The page is responsive and adapts to mobile, tablet and desktop screen sizes.</p></div></div></div></section>
+</main>
+<footer><div class="container footer-grid"><div><div class="footer-brand">Ayukripa Wellness Care</div><div>Healthy Life | Happy Life</div></div><p class="footer-note">Demo website for product presentation and member-flow prototyping. Product descriptions are informational and are not medical advice. Verify all product claims, labelling, pricing and business terms before publishing.</p><div>© <span id="year"></span> Ayukripa Wellness Care</div></div></footer>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const STORE_KEY = "ayukripa_demo_members_v1";
+const $ = id => document.getElementById(id);
+const getMembers = () => { try { return JSON.parse(localStorage.getItem(STORE_KEY) || "[]"); } catch { return []; } };
+const saveMembers = members => localStorage.setItem(STORE_KEY, JSON.stringify(members));
+const showMessage = (element, text, error=false) => { element.textContent=text; element.className="message"+(error?" error":""); element.style.display="block"; };
+function customerId(){ return "AYK-"+new Date().getFullYear()+"-"+Math.random().toString(36).slice(2,8).toUpperCase(); }
+function toast(text){const t=$("toast");t.textContent=text;t.style.display="block";setTimeout(()=>t.style.display="none",2600);}
+function showMember(member){
+ $("dashboard").style.display="block"; $("dashName").textContent=member.fullName; $("dashId").textContent=member.customerId;
+ $("dashSponsor").textContent=member.sponsor||"—"; $("dashPlacement").textContent=member.placement; $("dashPhone").textContent=member.phone;
+}
+$("registerForm").addEventListener("submit", e=>{
+ e.preventDefault();
+ const fullName=$("fullName").value.trim(), phone=$("phone").value.trim(), email=$("email").value.trim().toLowerCase();
+ const password=$("password").value, confirmPassword=$("confirmPassword").value;
+ if(password!==confirmPassword){showMessage($("registerMessage"),"Passwords do not match. Please try again.",true);return;}
+ if(password.length<8){showMessage($("registerMessage"),"Password must contain at least 8 characters.",true);return;}
+ const members=getMembers();
+ if(members.some(m=>m.email===email)){showMessage($("registerMessage"),"An account with this email already exists. Please log in.",true);return;}
+ const member={fullName,phone,email,password,customerId:customerId(),sponsor:$("sponsor").value.trim().toUpperCase(),placement:$("placement").value,address:$("address").value.trim(),createdAt:new Date().toISOString()};
+ members.push(member); saveMembers(members);
+ showMessage($("registerMessage"),"Registration saved in this browser. Please keep your demo customer ID.");
+ $("newCustomerId").textContent=member.customerId;
+ $("newIdMeta").textContent=`Name: ${member.fullName} • Placement: ${member.placement} • Sponsor: ${member.sponsor||"Not provided"}`;
+ $("newIdCard").style.display="block"; $("registerForm").reset(); toast("Demo customer ID generated.");
+});
+$("copyIdBtn").addEventListener("click",async()=>{
+ const id=$("newCustomerId").textContent;
+ try{await navigator.clipboard.writeText(id);toast("Customer ID copied.");}
+ catch{const r=document.createRange();r.selectNodeContents($("newCustomerId"));const s=window.getSelection();s.removeAllRanges();s.addRange(r);toast("Select and copy your customer ID.");}
+});
+$("loginForm").addEventListener("submit",e=>{
+ e.preventDefault(); const email=$("loginEmail").value.trim().toLowerCase(), password=$("loginPassword").value;
+ const member=getMembers().find(m=>m.email===email&&m.password===password);
+ if(!member){showMessage($("loginMessage"),"Email or password is incorrect, or this browser has no registered account.",true);$("dashboard").style.display="none";return;}
+ showMessage($("loginMessage"),"Login successful.");showMember(member);toast("Welcome, "+member.fullName+"!");
+});
+$("logoutBtn").addEventListener("click",()=>{$("dashboard").style.display="none";$("loginForm").reset();$("loginMessage").style.display="none";toast("You have logged out.");});
+$("menuBtn").addEventListener("click",()=> $("navlinks").classList.toggle("open"));
+document.querySelectorAll(".navlinks a").forEach(a=>a.addEventListener("click",()=> $("navlinks").classList.remove("open")));
+$("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
